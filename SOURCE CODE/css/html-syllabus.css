@@ -1,0 +1,195 @@
+ body{
+            background-color:rgb(38, 38, 50);
+            color:aliceblue;
+
+        }
+
+        header{
+    background: linear-gradient(to right,#0a0a0a,#000606);
+    /* display: inline-flex; */
+    border-radius: 10px;
+    height:80px ;
+    padding: 2%;
+}
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    flex-direction:column ;
+}
+nav h1{
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+        .introduction{
+
+            background:linear-gradient(to right,#0d1721,#111111);
+            margin: 1%;
+            border-radius: 10px;
+            padding: 5%;
+            font-size: large;
+        }
+.definition{
+    background:linear-gradient(to right,#252724,#033028);
+    padding: 5%;
+    margin: 2%;
+    border-radius: 10px;
+
+}
+.definition h3{
+font-size: 40px;
+}
+.definition ul{
+    font-size: 30px;
+}
+.introduction h2{
+    font-size: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 2%;
+}
+
+.structure{
+    background: linear-gradient(to right, #0a0a0a,#011a19);
+    padding: 5%;
+    margin: 2%;
+    border-radius:10px;
+}
+
+.code-body{
+    display: block;
+    background-color: #292828d7;
+    max-width: 500px;
+    max-height:fit-content ;
+    padding: 5px 10px 10px 10px;
+    height:fit-content;
+    border-radius: 3px;
+    font-size: 18PX;
+    text-align: left;
+}
+.structure h3{
+    font-size: 30px;
+}
+.Explaination-table th ,td{
+    background-color:#070f18 ;
+    border: 1px solid #080808;
+    padding: 10px;
+    margin: 10%;
+    color:#ffffff;
+
+}
+.Explaination-table caption{
+   
+    text-align: start;
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+     .element-section{
+        background:linear-gradient(to right, #02201c,#060606);
+        border-radius: 10px;
+        margin: 2%;
+        padding: 5%;
+       }
+       .element-section h3{
+        font-size: 30px;
+       }
+       .element-section h4{
+        font-size: 25px;
+       }
+       .element-section ul ,li{
+        padding-bottom: 5px;
+       }
+
+
+
+
+         .history{
+    background: linear-gradient(to left, #011f1f,#151514);
+    padding: 5%;
+    margin: 2%;
+    border-radius: 10px;
+}
+.history td,th{
+    padding: 10px 50px 10px 50px;
+    font-size: 20px;
+}
+.history caption{
+    margin: 2%;
+    padding: 5%;
+   
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+/* FORMATTING SECTION */
+
+
+  .formatting-tags{
+    background: linear-gradient(to left, #0b0b0b,#1b0103);
+    padding:5%;
+    margin:1%;
+    border-radius: 10px;
+    font-size: large;
+  }
+  .formatting-tags h1{
+    font-size: 50px;
+  }
+
+  .formatting-definition{
+    background: linear-gradient(to bottom, #01011e, #000201);
+    padding: 5%;
+    margin: 2%;
+    font-size: 30px;
+    border-radius: 10px;
+  }
+  .format-table{
+
+    background: linear-gradient(to left , #011c16,#02060b);
+    padding:5%;
+    margin:2%;
+  }
+
+.format-table caption{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+footer{
+    background: linear-gradient(to bottom , #040404,#00071a);
+    width: 100%;
+    padding: 5%;
+    margin: 2%;
+    height: 90px;
+    text-align: center;
+    align-items: center;
+}
+
+footer a{
+    color:#ffffff;
+    text-decoration: none;
+    background-color: #121312;
+    width: 200px;
+    padding:2%;
+    font-size: 30px;
+    border-radius: 5px;
+    
+}

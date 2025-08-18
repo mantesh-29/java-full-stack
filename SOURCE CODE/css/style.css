@@ -1,0 +1,40 @@
+ body{
+        background: linear-gradient(to bottom, #010b1a,#0e000e,#08000c,#01011e);
+        color: aliceblue;
+      }
+      table {
+        border-color: black;
+        border-width: 5px;
+        width: 80%;
+        margin: 10%;
+        font-size: 30px;
+      }
+
+      header {
+        align-items: center;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 50px;
+      }
+      header h2 {
+        font-size: 40px;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+      nav a {
+        color:rgb(0, 0, 0);
+        /* font-size: 10px; */
+        /* font-weight: bold; */
+        /* max-width: 95%; */
+        display: inline-block;
+        width: 190px;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+        background-color: rgb(131, 232, 232);
+        border-color: black;
+      }

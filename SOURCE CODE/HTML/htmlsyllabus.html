@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Syllabus</title>
+    <link rel="shortcut icon" href="/java full stack - curriculum/SOURCE FILE/HTML/FEVICON.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/java full stack - curriculum/SOURCE CODE/css/html-syllabus.css">
+
+    <style>
+.images-tags{
+    background: linear-gradient(to bottom, #0a0a0a,#01130b);
+    padding: 5%;
+    margin: 1%;
+    border-radius: 10px;
+}
+.images-tags h1{
+    font-size: 50px;
+}
+.html-images{
+    background: linear-gradient(to left, #090404,#031d1f);
+    border-radius: 10px;
+    margin:2%;
+    padding: 5%;
+}
+.html-images p{
+    font-size: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+     <nav>
+        <img src="/java full stack - curriculum/SOURCE FILE/HTML/logo-mini.svg" height="50px">
+        <h1>Hyper Text Markup Language</h1>
+        <a href="/java full stack - curriculum/index.html">Return </a>
+     </nav>
+    </header>
+    <main>
+                              <!-- Intoducion section start -->
+        <section class="introduction" id="introduction">
+            
+        <h2>Introduction to HTML </h2>
+        
+        <div class="definition">
+            <h3>What is HTML?</h3>
+            <span>
+
+                <ul>
+                    <li><strong>Full Form:</strong>Hyper Text Markup Language</li>
+                    <li><strong>Purpose:</strong>Standard markup language for creating web pages.</li>
+                    <li><strong>Functions:</strong>
+                        <ul>
+                            <li>Describes the structure of a web page.</li>
+                            <li>Consists of elements (tags) that tell the browser how to display content.</li>
+                            <li>Labels content such as headings, paragraphs, links, etc.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+
+
+            <span><title></title>
+         
+               <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media;  -->
+               <iframe src="https://www.youtube.com/embed/0gU-qrq3gjU?start=312&end=585&autoplay=1&mute=1" 
+               frameborder="2" width="450px" height="300px"  title="Youtube video player" allow="autoplay;accelerometer;" allowfullscreen></iframe>
+               <p>HTML Introduction video by Love Babbar</p>
+            </span>
+         
+        </div>
+
+        <div class="structure">
+            <h3>Basic HTML Document Structure</h3>
+          
+            <p class="code-body">
+<code>
+    &lt;!DOCTYPE html &gt;<br>
+    &lt;html&gt;<br><br>
+        &lt;head&gt;<br>
+          &lt;title>Page Title&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        <br>
+        &lt;body&gt;<br>
+            &lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+            &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+
+        &lt;/body&gt;<br>
+<br>    &lt;/html&gt;        <br>           
+</code>
+            </p>
+
+        
+            <table class="Explaination-table">
+                    <caption><h4>Explaination</h4></caption>
+                    <tbody>
+
+                        <tr>
+                            <th>   &lt; !DOCTYPE HTML &gt; </th>
+                            <td> Declares document type as HTML5.</td>
+                        </tr>
+                        <tr>
+                            <th>&lt; html &gt;</th>
+                            <td>Root element of the page.</td>
+                    </tr>
+                    <th>    &lt; head &gt;</th>
+                        <td>Contains meta information (not shown on page).</td>
+                    </tr>
+                    <tr>
+                        <th> &lt; title &gt;</th>
+                        <td>Title shown in browser tab.</td>
+                    </tr>
+                    <th>   &lt; body &gt;</th>
+                    <td>Contains all visible content (headings, text, images, etc.).</td>
+                </tr>
+                <tr>
+                    <th>  &lt; h1 &gt;</th>
+                    <td>Large heading.</td>
+                </tr>
+                <tr>
+                    <th>  &lt; p &gt;</th>
+                    <td>Paragraph.</td>
+                </tr>
+            </tbody>
+                </table>                           
+        </div>
+<div class="element-section">
+        <div class="element">
+            <h3>HTML Element</h3>
+            <h4>Structure:</h4>
+            <p class="code-body">
+<code>
+&lt; tagname &gt; Content are written here  &lt;/ tagname &gt;
+</code>
+            </p>
+
+            <strong>Example:</strong>
+            <p class="code-body">
+
+<code>
+&lt; h1 &gt; My First Heading &lt;/h1&gt;
+</code>
+            </p>
+
+            <ul>
+                <li> <strong>Start tag: </strong> &lt; h1 &gt;</li>
+                <li> <strong>Content: </strong> My First Heading</li>
+                <li> <strong>End tag: </strong> &lt; /h1 &gt;</li>
+            </ul>
+            <p><strong>Empty Elements:</strong> Have no content and no end tag (e.g. , &lt;br&gt;).</p>
+        </div>
+
+
+        <h3>Web Browsers</h3>
+        <ul>
+            <li>
+                <strong>Purpose:</strong> Read HTML documents and display them according to the tags.
+            </li>
+            <li>
+                <strong>Examples: </strong>Chrome, Edge, Firefox, Safari.
+            </li>
+            <li>
+                Browsers <strong>do not show HTML tags</strong>, only the formatted result.
+            </li>
+        </ul>
+        
+        <h3>HTML Page structure Visualization</h3>
+        <p class="code-body">
+            <code>
+                &lt;html&gt;<br><br>
+                &lt;head&gt;
+                <br>                               &lt;title>Page Title&lt;/title&gt;
+                <br>                       &lt;/head&gt;<br>
+                <br>                   &lt;body&gt;
+                
+                <br>                   &lt;h1&gt;This is a heading&lt;/h1&gt;
+                <br>               &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                <br>           &lt;p&gt;This is another paragraph.&lt;/p&gt;
+                <br>   &lt;/body&gt;<br>
+                <br>  &lt;/html&gt;  
+            </code>
+        </p>
+        <ul>
+            <li>
+                <strong>Content inside &lt; body &gt; &rarr;</strong>Shown in browser window.
+            </li>
+            <li>
+                <strong>Content inside &lt; title &gt; &rarr;</strong>Shown in browser tab.
+            </li>
+        </ul>
+        
+    </div>
+
+
+        <div class="history">
+
+            <table> <caption>History of HTML</caption>
+                <thead>
+                    <th>Year</th>
+                    <th>Version/Event</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1989</td>
+                        <td>Tim Berners-Lee invented WWW</td>
+                    </tr>
+                    <tr>
+                        <td>1991</td>
+                        <td>Tim Berners-Lee invented HTML</td>
+                    </tr>
+                    <tr>
+                        <td>1993</td>
+                        <td>Dave Raggett drafted HTML+</td>
+                    </tr>
+                    <tr>
+                        <td>1995</td>
+                        <td>HTML 2.0 defined</td>
+                    </tr>
+                    <tr>
+                        <td>1997</td>
+                        <td>HTML 3.2</td>
+                    </tr>
+                    <tr>
+                        <td>1999</td>
+                        <td>HTML 4.01</td>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td>XHTML 1.0</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>HTML5 First Public Draft</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>HTML5 Living Standard</td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>HTML5 W3C Recommendation</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>HTML 5.1 Candidate Recommendation</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>HTML5.1 (2nd Edition) and HTML5.2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        </section>
+                        <!-- Introduction section end -->
+
+        <section class="formatting-tags" id="formatting-tags">
+            <h1>Presentational or Formatting Tags</h1>
+            <div class="formatting-definition">
+                <p>
+                   Presentational (or formatting) tags in HTML are tags 
+                   whose main purpose is to change the visual appearance of text or content, 
+                   rather than convey semantic meaning. 
+                </p>
+                <p>These tags were widely used in older HTML versions (HTML 3.2 / 4.01) 
+                    but are <strong> <mark>deprecated in HTML5</mark></strong> in favor of CSS for styling. However, 
+                    browsers still support them for backward compatibility.</p>
+
+
+                    <iframe src="https://www.youtube.com/embed/KdWPGqT5GwE?start=60&end=&mute=1&autoplay=1"  height="300px" width="400px"title="YouTube video player" frameborder="2" allow="accelerometer; autoplay;"   ></iframe>
+            </div>
+
+       <div class="format-table"> 
+   <table>
+    <caption>List of HTML Presentational/Formatting Tags</caption>
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Meaning</th>
+            <th>Example</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&lt;b&gt;</td>
+            <td>Bold text (no semantic importance)</td>
+            <td><b>Bold Text</b></td>
+            <td>Use &lt;strong&gt; for semantic importance.</td>
+        </tr>
+        <tr>
+            <td>&lt;strong&gt;</td>
+            <td>Strongly emphasized/important text</td>
+            <td><strong>Important Text</strong></td>
+            <td>Semantic importance; usually bold by default.</td>
+        </tr>
+        <tr>
+            <td>&lt;i&gt;</td>
+            <td>Italic text (no semantic emphasis)</td>
+            <td><i>Italic Text</i></td>
+            <td>Use &lt;em&gt; for semantic emphasis.</td>
+        </tr>
+        <tr>
+            <td>&lt;em&gt;</td>
+            <td>Emphasized text</td>
+            <td><em>Emphasis</em></td>
+            <td>Semantic emphasis; usually italic.</td>
+        </tr>
+        <tr>
+            <td>&lt;u&gt;</td>
+            <td>Underlined text</td>
+            <td><u>Underline</u></td>
+            <td>Non-semantic; use CSS <code>text-decoration</code> instead.</td>
+        </tr>
+        <tr>
+            <td>&lt;mark&gt;</td>
+            <td>Highlighted text</td>
+            <td><mark>Highlight</mark></td>
+            <td>HTML5 semantic highlight; usually yellow background.</td>
+        </tr>
+        <tr>
+            <td>&lt;small&gt;</td>
+            <td>Smaller text</td>
+            <td><small>Small Text</small></td>
+            <td>Often used for fine print.</td>
+        </tr>
+        <tr>
+            <td>&lt;big&gt;</td>
+            <td>Makes text one font size larger</td>
+            <td><big>Bigger Text</big></td>
+            <td>Deprecated; use CSS <code>font-size</code>.</td>
+        </tr>
+        <tr>
+            <td>&lt;sub&gt;</td>
+            <td>Subscript text</td>
+            <td>H<sub>2</sub>O</td>
+            <td>Used in chemical formulas and math.</td>
+        </tr>
+        <tr>
+            <td>&lt;sup&gt;</td>
+            <td>Superscript text</td>
+            <td>x<sup>2</sup></td>
+            <td>Used in math, footnotes.</td>
+        </tr>
+        <tr>
+            <td>&lt;del&gt;</td>
+            <td>Deleted/removed text</td>
+            <td><del>Old Price</del></td>
+            <td>Indicates removal; usually struck-through.</td>
+        </tr>
+        <tr>
+            <td>&lt;ins&gt;</td>
+            <td>Inserted/added text</td>
+            <td><ins>New Content</ins></td>
+            <td>Indicates addition; usually underlined.</td>
+        </tr>
+        <tr>
+            <td>&lt;s&gt;</td>
+            <td>Strikethrough (outdated/inaccurate content)</td>
+            <td><s>No Longer Valid</s></td>
+            <td>HTML5 semantic for outdated information.</td>
+        </tr>
+        <tr>
+            <td>&lt;strike&gt;</td>
+            <td>Strikethrough text</td>
+            <td><strike>Old Price</strike></td>
+            <td>Deprecated; use &lt;s&gt; or CSS.</td>
+        </tr>
+        <tr>
+            <td>&lt;tt&gt;</td>
+            <td>Teletype/monospace font</td>
+            <td><tt>Monospace</tt></td>
+            <td>Deprecated; use CSS <code>font-family: monospace;</code>.</td>
+        </tr>
+        <tr>
+            <td>&lt;font&gt;</td>
+            <td>Change font face, size, or color</td>
+            <td><font color="red">Red Text</font></td>
+            <td>Deprecated; use CSS.</td>
+        </tr>
+        <tr>
+            <td>&lt;center&gt;</td>
+            <td>Centers text or content</td>
+            <td><center>Centered Text</center></td>
+            <td>Deprecated; use CSS <code>text-align: center;</code>.</td>
+        </tr>
+        <tr>
+            <td>&lt;blink&gt;</td>
+            <td>Makes text blink</td>
+            <td><blink>Blinking Text</blink></td>
+            <td>Not supported in most browsers.</td>
+        </tr>
+        <tr>
+            <td>&lt;marquee&gt;</td>
+            <td>Scrolling text horizontally/vertically</td>
+            <td><marquee>Scrolling Text</marquee></td>
+            <td>Non-standard; avoid.</td>
+        </tr>
+        <tr>
+            <td>&lt;abbr&gt;</td>
+            <td>Abbreviation</td>
+            <td><abbr title="HyperText Markup Language">HTML</abbr></td>
+            <td>Shows full form on hover.</td>
+        </tr>
+        <tr>
+            <td>&lt;dfn&gt;</td>
+            <td>Definition term</td>
+            <td><dfn>HTML</dfn></td>
+            <td>Indicates a term being defined.</td>
+        </tr>
+        <tr>
+            <td>&lt;cite&gt;</td>
+            <td>Title of a creative work</td>
+            <td><cite>Hamlet</cite></td>
+            <td>Usually italicized.</td>
+        </tr>
+        <tr>
+            <td>&lt;q&gt;</td>
+            <td>Inline quotation</td>
+            <td><q>Hello World</q></td>
+            <td>Adds quotation marks automatically.</td>
+        </tr>
+        <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td>Block quotation</td>
+            <td><blockquote>Long Quote</blockquote></td>
+            <td>Displayed as a block; usually indented.</td>
+        </tr>
+        <tr>
+            <td>&lt;code&gt;</td>
+            <td>Inline code snippet</td>
+            <td><code>print("Hi")</code></td>
+            <td>Monospaced font for code.</td>
+        </tr>
+        <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Preformatted text</td>
+            <td><pre>Line 1
+Line 2</pre></td>
+            <td>Preserves spaces and line breaks.</td>
+        </tr>
+        <tr>
+            <td>&lt;kbd&gt;</td>
+            <td>Keyboard input</td>
+            <td><kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+            <td>Represents key presses.</td>
+        </tr>
+        <tr>
+            <td>&lt;samp&gt;</td>
+            <td>Sample output</td>
+            <td><samp>Error 404</samp></td>
+            <td>Represents program output.</td>
+        </tr>
+        <tr>
+            <td>&lt;var&gt;</td>
+            <td>Variable</td>
+            <td><var>x</var> = 5</td>
+            <td>Used for programming/math variables; italic by default.</td>
+        </tr>
+        <tr>
+            <td>&lt;bdi&gt;</td>
+            <td>Bi-directional isolation</td>
+            <td><bdi>ABC</bdi></td>
+            <td>Isolates text direction from surrounding text.</td>
+        </tr>
+        <tr>
+            <td>&lt;bdo&gt;</td>
+            <td>Bi-directional override</td>
+            <td><bdo dir="rtl">Hello</bdo></td>
+            <td>Overrides text direction.</td>
+        </tr>
+        <tr>
+            <td>&lt;time&gt;</td>
+            <td>Date/time</td>
+            <td><time datetime="2025-08-10">Aug 10, 2025</time></td>
+            <td>Machine-readable date/time.</td>
+        </tr>
+        <tr>
+            <td>&lt;address&gt;</td>
+            <td>Contact information</td>
+            <td><address>123 Street, City</address></td>
+            <td>Often displayed in italic.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+
+
+            </section>
+
+        <section class="images-tags" id="images-tags">
+            <h1>Image Tags</h1>
+            <div class="html-images">
+               <p> In HTML, images are added using the <code>&lt;img&gt;</code> tag, which is self-closing and requires at least the <code>src</code>(source) and <code>alt</code>
+                (alternative text) attributes.</p> 
+                <p><code>
+                    &lt;img&gt; or &lt;img/&gt;
+                </code></p>
+                <p>The image can be inserted using <code>src</code> attribute which holds path of the image</p>
+               
+<p class="code-body">
+                <code>
+                    &lt;img src=<q> image.jpg </q> alt=<q>Desccription of image </q>/&gt;
+                </code>
+           </p> </div>
+
+            </section>
+        <section class="Anchor-tag" id="Anchor-tag">
+        <section class="HTML" id="HTML">
+        <section class="tables-Lists-tags" id="tables-Lists-tags">
+        <section class="Frame-div-tags" id="Frame-div-tags">
+        <section class="HTML-forms" id="HTML-forms">
+
+
+<h2>
+    Form Tag
+</h2>
+
+<div>
+
+    <p>In HTML , the <code>&lt;form&gt;</code> tag is used to create a section of a web page where the user can enter data and submit it to a server for processing (like login details,search queries,  or file uploads).</p>
+    <ul>
+        <li>Forms are used to collect the data from web pages.</li>
+        <li>Every form is between 'Form' element.</li>
+        <li>Forms collect the data and send to the server via JavaScript.</li>
+        <li>Form element contains inputs and buttons to submit or reset the forms.</li>
+    </ul>
+    <p><strong>Example: </strong> Login from, signup, forget password, servey, feedback, profile, email, newsletter, contact form, appointment form, complaint form. </p>
+</div>
+
+<h3>Basic Syntax</h3>
+<div class="code-body">
+    <code>
+        &lt;form action = "server_url" method="get|post"&gt;
+            <!-- Form elements go here -->
+        &lt;/form&gt;
+    </code>
+</div>
+
+
+<h2>Attributes of <code> &lt; form &gt; </code></h2>
+<table>
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>action</code></td>
+            <td>URL where the form data will be sent after submission.</td>
+            <td><code>action="submit.java"</code></td>
+        </tr>
+        <tr>
+            <td><code>method</code></td>
+            <td>HTTP method for sending data: <code>get</code>(appends to URL) Gor <code>post</code>(sends in request body).</td>
+            <td><code>method="post"</code></td>
+        </tr>
+        <tr>
+            <td><code>target</code></td>
+            <td>Where to display the response (e.g., <code>_blank</code> for a new tab, <code></code>_parent</code>, <code>_top</code>, <code>_self</code>).</td>
+            <td><code>target="_blank"</code></td>
+        </tr>
+        <tr>
+            <td><code>enctype</code></td>
+            <td>Encoding type for form data (e.g., <code>multipart/form-data</code> for file uploads).</td>
+            <td><code>enctype="multipart/form-data"</code></td>
+        </tr>
+        <tr>
+            <td><code>autocomplete</code></td>
+            <td>Enables/disables browser’s autocomplete feature.</td>
+            <td><code>autocomplete="on"</code></td>
+        </tr>
+        <tr>
+            <td><code>novalidate</code></td>
+            <td>Disables HTML5 Validation</td>
+            <td><code>novalidate</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Example Form</h3>
+<div class="code-body">
+<code>
+    &lt;form action="#" method="post"&gt;<br>
+        &lt;label for="username"&gt;Username:&lt;/label&gt;<br>
+        &lt;input type="text" id="username" name="username" required&gt; &lt;br/&gt;&lt;br/&gt;<br>
+        &lt;label for="password"&gt;Password:&lt;/label&gt;<br>
+        &lt;input type="password" id="password" name="password" required&gt; &lt;br/&gt;&lt;br/&gt;<br>
+        &lt;input type="submit" value="Login"&gt;<br>
+</code>
+
+</div>
+<h3>Result of the code</h3>
+<code class="code-result">
+    <form action="#" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required> <br/> <br/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required> <br/> <br/>
+        <input type="submit" value="Login">
+    </form>
+</code>
+
+
+
+
+
+
+
+
+
+
+            </section>
+        <section class="form-controls" id="form-controls">
+        <section class="HTML5" id="HTML5">
+        <section class="canvas" id="canvas">
+        <section class="graphics" id="graphics">
+        <section class="svg" id="svg">
+        <section class="Multimedia" id="Multimedia">
+        <section class="Geoloaction" id="Geoloaction">
+
+    </main>
+    <footer>
+        <a href="/java full stack - curriculum/index.html">Return</a>
+    </footer>
+</body>
+</html>
+
