@@ -4,10 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/SOURCE CODE/css/css-syllabus.css">
 </head>
 <body>
-    <section id="introduction"><h2>Introduction to CSS</h2></section>
-    <section id="selectors"><h2>CSS Selectors</h2></section>
+    <section id="introduction"><h2>Introduction to CSS</h2>
+
+        <h3>CSS (Cascadibg Style Sheets)</h3>
+        <p>CSS (Cascading Style Sheets) is a stylesheet language used to control the look and feel (presentation) 
+            of a document written in HTML or XML. It separates the content (HTML) from the design (CSS), 
+            making websites more attractive and easier to maintain.</p>
+
+            <h3>CSS Full Form</h3>
+            <ul>
+            <li>CSS stands for Cascading Style Sheets.</li>
+            <li><strong>Cascading: </strong>Refers to the way styles are applied: <strong>newer or more specific rules override older or general ones.</strong></li>
+            <li><strong>Style Sheets:</strong>A set of rules that define how HTML elements should be displayed.</li>
+              </ul>
+
+        <h3>Purpose of CSS</h3>
+        <ul>
+            <li>To design and control the layout of multiple web pages at once.</li>
+            <li>To apply <strong>styles</strong> such as:
+            <ul>
+                <li>Colors</li>
+                <li>Fonts  & Typography</li>
+                <li>Spacing (margins, padding, line-height)</li>
+                <li>Page Layout (grid, flexbox,positioning)</li>
+                <li>Backgrounds (color, image, gradient),Borders, Animations, Transitions</li>
+            </ul></li>
+        </ul>
+        <table>
+            <caption>Advantages of CSS</caption>
+            <thead>
+                <tr>
+                    <th>Advantage</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Separation of content & design</td>
+                    <td>HTML handles content, CSS handles design.</td>
+                </tr>
+                <tr>
+                    <td>Reusability</td>
+                    <td>One CSS file can style multiple pages.</td>
+                </tr>
+                <tr>
+                    <td>Consistency</td>
+                    <td>Uniform look across all web pages.</td>
+                </tr>
+                <tr>
+                    <td>Faster development</td>
+                    <td>No need to repeat style codes inside HTML.</td>
+                </tr>
+                <tr>
+                    <td>Better performance</td>
+                    <td>External CSS reduces page load time by caching.</td>
+                </tr>
+                <tr>
+                    <td>Responsive Design</td>
+                    <td>CSS makes websites adapt to different screen sizes (desktop, tablet, mobile).</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>CSS can be used in 3 ways in HTML</h3>
+        <ul>
+            <li><strong>Inline CSS:</strong> Styles are applied directly to HTML elements using the <q>style</q> attribute.</li>
+            <li><strong>Internal CSS:</strong> Styles are defined within a &lt;style&gt; tag in the head section of the HTML document.</li>
+            <li><strong>External CSS:</strong> Styles are defined in separate .css files and linked to the HTML document using the <link> tag.</li>
+        </ul>
+        <h4>Inline CSS</h4>
+        <ul>
+            <li><strong>Definition:</strong> Applied directly to an individual HTML element using the <code><q>style</q></code> attribute inside the tag.</li>
+            <li><strong>Use case:</strong> For quick styling of a single element.</li>
+            <li><strong>Limitation:</strong> Not recommended for large projects (difficult to maintain).</li>
+        </ul>
+        <h4>Internal CSS</h4>
+        <ul>
+            <li><strong>Definition:</strong> Styles are written within a &lt;style&gt; tag in the head section of the HTML document.</li>
+            <li><strong>Use case:</strong> For styling a single <strong>HTML Page</strong> only.</li>
+            <li><strong>Limitation:</strong> Styles are not reusable across multiple pages.</li>
+        </ul>
+
+        <h4>External CSS</h4>
+        <ul>
+            <li><strong>Definition:</strong> Styles are stored in a separate .css file and linked to the HTML file using the <code>&lt;link&gt;</code> tag.</li>
+            <li><strong>Use case:</strong> Best for large websites because one CSS file can style multiple pages.</li>
+            <li><strong>Advantage:</strong> Makes the website consistent, easy to maintain, and faster.</li>
+        </ul>
+
+
+        <table><caption>Short Description</caption>
+        <thead>
+            <tr>
+                <th>Type of CSS</th>
+                <th>Where it is written</th>
+                <th>Scope</th>
+                <th>Best Use Case</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Inline CSS</td>
+                <td>Inside an element (using <code>style</code> attribute)</td>
+                <td>Only that element</td>
+                <td>Small, quick changes</td>
+            </tr>
+            <tr>
+                <td>Internal CSS</td>
+                <td>Inside <code></code>&lt;style&gt;</code> in HTML <code>&lt;head&gt;</code></td>
+                <td>Whole page</td>
+                <td>Single-page projects</td>
+            </tr>
+            <tr>
+                <td>External CSS</td>
+                <td>Separate <code>.css</code> file, linked with <code>&lt;link&gt;</code></td>
+                <td>Multiple pages</td>
+                <td>Large websites, reusable styles</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+    <section id="selectors"><h2>CSS Selectors</h2>
+        <h3>What are CSS Selectors?</h3>
+        <p>CSS selectors are patterns used to select the elements you want to style in your HTML document. They allow you to apply styles to specific elements based on their type, class, id, attributes, and more.</p>
+
+        <h3>Types of CSS Selectors</h3>
+        <ul>
+            <li><strong>Element Selector:</strong> Selects all elements of a given type (e.g., <code>p</code>, <code>h1</code>).</li>
+            <li><strong>Class Selector:</strong> Selects elements with a specific class (e.g., <code>.classname</code>).</li>
+            <li><strong>ID Selector:</strong> Selects an element with a specific ID (e.g., <code>#idname</code>).</li>
+            <li><strong>Attribute Selector:</strong> Selects elements based on their attributes (e.g., <code>[type="text"]</code>).</li>
+            <li><strong>Pseudo-classes:</strong> Selects elements based on their state (e.g., <code>:hover</code>, <code>:first-child</code>).</li>
+            <li><strong>Pseudo-elements:</strong> Selects parts of an element (e.g., <code>::before</code>, <code>::after</code>).</li>
+        </ul>
+    </section>
     <section id="attributes"><h2>CSS Attributes</h2></section>
     <section id="lists"><h2>CSS Lists</h2></section>
     <section id="tables"><h2>CSS Tables</h2></section>
@@ -22,6 +154,142 @@
     <section id="css3-multiple-columns"></section>
     <section id="css3-ui"></section>
 
+    </section>
+
+
+
+
+
+    <section id="practice">practice:
+        <div>practice:</div>
+<div>
+
+
+
+
+
+    box model:
+<h3>Box Model</h3>
+<p></p>
+    Browsers treat eery element as a box . A box contains 
+     border,
+     border-radius
+     padding
+     margin
+
+
+     <h3>Border:</h3><p>Border is the surrounding line for an element</p>
+<code>
+    border: size shape color;
+</code>
+we can even assign 
+border-left;
+border-right;
+border-top;
+border-bottom;
+    </div>
+
+<div>
+
+    border radius: it is the corner radius surround the border corners. 
+    border-radius:size;
+    50% of border radius makes actual circle for square shape.
+    we can also assign each corner radius saperately.
+</div>
+<div>
+    padding:
+    it is the space between border and actual content of element(inside the element)
+    padding: size ;
+    we ccan also assign padding as padding left, padding-right,,padding-top, padding-bottom.
+</div>
+<div>normally padding makes each box increased its height or width because by default all are content boxes. so we need to use 
+    box-sizing: border-box;
+</div>
+<div>margin:
+    it is the space outside the border.
+    used for gap between the elements.
+    margin:size;
+    we can also assign margin as amrgin-left,
+    margin-right,margin-top,margin-bottom;
+</div>
+<div>
+
+</div>
+<DIV> 
+
+    float, displaye
+    positioni
+    fleex
+    grid
+    transitions, Animations
+    advanced css
+    responsivenes(media queries)
+    html,css website
+</DIV>
+
+
+
+
+
+
+    </section>
+
+    <section id="display-float"><h3>Display and float</h3>
+    
+    float: float is used to make any element floating to the left or right side of screen , it makes the element removev from actual execution and next element takes up the spacce of floating element.
+    float: left/right/none;
+    we can even clear the floating elements for any other element using 
+    clear: left/right/both;
+
+
+
+    <p>
+        Display: display is used to arrange the elements in a specific way
+    </p>
+    display : block;
+    will make the elements into block so that each element will display in a a new line.
+    display: inline;
+    make the elements into inline so that each element follows the previous element(maintains same flow)
+     but inline elements can not handle height or width or verticle margins.
+
+     display: inline-block;
+     works like inline but accepts height or width.
+     display: none;
+     removes the elements(visibility hidden just hides the elements )- element will not take any space when using display: none;
+     
+
+position: positions is used to keep elements at different places in user interface. There are 5 positions available in css such as 
+absolute: absolute elements move according to the position of body. So left: 0px; will actually move towards leftmost end of screen, scrolling have impact on absolute.
+relative:  relative elements move according to the position of current position, so left: 0px; will not have impact towards it. 
+static:   by default , all elements are static. static elements can not have top,left,right,bottom.
+fixed: fixed elements also move according to body but it will not scroll 
+sticky: sticky is notihing but relatve + fixed so intially it stays like relative but ones it reaches certain point it becomes foxed. untill its parent end reached.
+
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    </section>
+
+    <section id="practice-project">
+
+
+<img src="/SOURCE FILE/HTML/HTML-Basic-Format-768x534.png" alt="" class="image1">
+<!-- <img src="/SOURCE FILE/HTML/logo-desktop.svg" alt=""> -->
+
+<h1>HTML Page Structure</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit consequuntur vel reiciendis libero, cumque nisi quaerat facere nihil iure voluptates id quasi vitae, est minus! Doloribus dolores cupiditate temporibus! Quasi praesentium totam eligendi iusto itaque et, nisi, explicabo, maiores culpa nostrum consectetur at! Nihil officia consectetur est odio unde similique at debitis perferendis eum, magnam eveniet? Quos modi, pariatur dolore voluptate inventore nihil. Nobis doloremque numquam, hic deleniti quis eum eos itaque maiores aut ad. Iste officia tempore repellendus, culpa illum pariatur provident error exercitationem mollitia quam consequatur voluptatum vero id ratione, harum voluptate. Nulla at corporis magni quaerat debitis molestiae facilis illum obcaecati inventore ex soluta, iste accusamus sit necessitatibus nesciunt illo, recusandae magnam quis optio repellat deserunt tenetur? Adipisci consectetur molestiae nobis dolorum ex quae deleniti qui perferendis nihil, molestias, excepturi, id tempora quo minima. Officiis ipsum a tempore at corporis. Deleniti nostrum totam iste harum repellat similique reiciendis provident numquam delectus ea. Sequi repellendus iste et, eligendi, earum quo assumenda obcaecati soluta eos nam odit sunt numquam? Quam nulla eum molestias labore blanditiis expedita mollitia nesciunt explicabo accusantium placeat magnam maiores voluptates delectus rem adipisci reprehenderit harum, id eligendi corporis? Minus quos libero soluta aspernatur dolore!</p>
+<button>Learn More</button>
+<div class="div1"></div>
+<div class="div2"></div>
+cssbattle
     </section>
 </body>
 </html>
