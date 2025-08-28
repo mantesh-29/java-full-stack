@@ -140,7 +140,19 @@
             <li><strong>Pseudo-elements:</strong> Selects parts of an element (e.g., <code>::before</code>, <code>::after</code>).</li>
         </ul>
     </section>
-    <section id="attributes"><h2>CSS Attributes</h2></section>
+    <section id="attributes"><h2>CSS Attributes</h2>
+    
+    <div class="box-model">
+        <p><strong>Box Model: </strong>   
+    Browsers treat every element as a box . A box contains 
+     border,
+     border-radius
+     padding
+     margin</p>
+
+    </div>
+    
+    </section>
     <section id="lists"><h2>CSS Lists</h2></section>
     <section id="tables"><h2>CSS Tables</h2></section>
     <section id="Advanced-css"><h2>Advanced CSS</h2></section>
@@ -155,6 +167,13 @@
     <section id="css3-ui"></section>
 
     </section>
+
+
+
+
+
+
+
 
 
 
@@ -278,18 +297,82 @@ sticky: sticky is notihing but relatve + fixed so intially it stays like relativ
     
     </section>
 
-    <section id="practice-project">
 
 
-<img src="/SOURCE FILE/HTML/HTML-Basic-Format-768x534.png" alt="" class="image1">
-<!-- <img src="/SOURCE FILE/HTML/logo-desktop.svg" alt=""> -->
 
-<h1>HTML Page Structure</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit consequuntur vel reiciendis libero, cumque nisi quaerat facere nihil iure voluptates id quasi vitae, est minus! Doloribus dolores cupiditate temporibus! Quasi praesentium totam eligendi iusto itaque et, nisi, explicabo, maiores culpa nostrum consectetur at! Nihil officia consectetur est odio unde similique at debitis perferendis eum, magnam eveniet? Quos modi, pariatur dolore voluptate inventore nihil. Nobis doloremque numquam, hic deleniti quis eum eos itaque maiores aut ad. Iste officia tempore repellendus, culpa illum pariatur provident error exercitationem mollitia quam consequatur voluptatum vero id ratione, harum voluptate. Nulla at corporis magni quaerat debitis molestiae facilis illum obcaecati inventore ex soluta, iste accusamus sit necessitatibus nesciunt illo, recusandae magnam quis optio repellat deserunt tenetur? Adipisci consectetur molestiae nobis dolorum ex quae deleniti qui perferendis nihil, molestias, excepturi, id tempora quo minima. Officiis ipsum a tempore at corporis. Deleniti nostrum totam iste harum repellat similique reiciendis provident numquam delectus ea. Sequi repellendus iste et, eligendi, earum quo assumenda obcaecati soluta eos nam odit sunt numquam? Quam nulla eum molestias labore blanditiis expedita mollitia nesciunt explicabo accusantium placeat magnam maiores voluptates delectus rem adipisci reprehenderit harum, id eligendi corporis? Minus quos libero soluta aspernatur dolore!</p>
-<button>Learn More</button>
-<div class="div1"></div>
-<div class="div2"></div>
-cssbattle
+
+    <section id="flex">
+        <p>Flex: flexbox is used to arrange the elements in single direction either row or column
+
+            parent properties: flexbox allows its parent to have below properties like 
+            display: flex;
+            it is used to arrange child items in single direction default row
+            flex-direction: it is used to arrange child items in specific direction.
+            row/row-reverse/column/column-reverse    
+            gap: it is used to provide gapes between the items\
+            axis in which elemets are arranged is called main axis and axis which elements not arranged (oppsite to mian axis) is called axis
+        </div>
+          justify-content: it is used to move the elements along the main axis (left/right/center/start/end/space-between/space-around/spacce-evenly)
+        
+        align-items: it is used to move the elements along the cross axis (left/right/center/start/end)
+    
+    
+    flex-wrap---   it is used to wwrwap the elements into new lines and 
+align-content: it is used to move the lines done by flex wrap
+
+child properties: 
+order: it is used to arrange child item individually at any place by default order is 0 and elemetns are arranged based on order's increasing order.
+align-self: it is used to adjust elemnt individually acroos cross axis.
+flex-shrink: it is used to shrink more than the other elements.
+flex-grow: it is used to grow more than the other elements. 
+flex-basis: it is used to make an element same without grow or shrink.
+
+</p>
+    </section>
+
+
+    <section id="grid">
+        Grid: grid is a modern responsive css layout which is used to display items or elements in 2 dimensional way (rows and columns) in a web page. 
+    
+        parent propertiers:
+         display: grid    it is used to make the container grid and it fits all its child items as a single columns,
+         grid-template-columns: it is used to specifiy individual columns width grid-template-columns : 100px 50px 200px; 
+         create 3 columns of respective widths.
+         gid-template-columns: 20% 50% 30% ;
+         creates 3 columns of respective percentages.
+         grid-template-columns: 1fr 2fr 3fr;
+         divides into 3 columns of respective fractions.
+         we can also specify repeat(n,x) where is n is no. of time to repeat x value.
+
+
+         grid template rows it is used to specify each rows height similarly grid-template columns
+
+         gap : it is used to provide gap between the items. we can also specify 
+         row-gap and column-gap
+ 
+         justify-content: it is used to move items along row-gap
+         align-content: it is used to move items along column
+
+         child properties:
+
+         we need to divide and understand grid as grid tracks (grid row lines and grid column lines)
+
+
+
+
+        grid-column-start: starting column line number
+        grid-column-end: endning column line number
+        grid-column: grid-column-start/grid-column-end;
+        grid-row-start: starting row line number
+        grid-row-end: ending row line number
+        grid-row: grid-row-start/grid-row-end;
+        grid-area: grid-row-start/grid-column-start/grid-row-end/grid-column-end;
+        order: by default every element order of order proeprty.
+    
+    
+    
+    
+    
     </section>
 </body>
 </html>
